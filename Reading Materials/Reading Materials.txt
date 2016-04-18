@@ -1,0 +1,13 @@
+Reading Materials:
+http://gameprogrammingpatterns.com/
+http://docs.unity3d.com/Manual/ExecutionOrder.html
+https://unity3d.com/learn/tutorials/modules/intermediate/scripting/events
+https://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/scriptable-objects
+http://unity3d.com/learn/tutorials/topics/scripting/assetbundles-and-assetbundle-manager
+
+
+GitHug Repository link TestBenchKristoffer:
+https://github.com/Senimantas/TestBenchKristoffer
+
+GitHub Repository link Bion7:
+https://github.com/RhesusStudios/Bion-7

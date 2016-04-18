@@ -3,9 +3,10 @@ using System.Collections;
 
 public class EventManager : MonoBehaviour 
 {
-	public delegate void ClickAction();
-	public static event ClickAction OnClicked;
+	public delegate void ClickEvent();
 
+	public static event ClickEvent OnClicked;
+	public static event ClickEvent OnPressed;
 
 	void OnGUI()
 	{

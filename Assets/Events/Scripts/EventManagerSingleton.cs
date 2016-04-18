@@ -3,6 +3,12 @@ using System.Collections;
 
 public class EventManagerSingleton
 {
+	public enum Type
+	{
+		LosesOneLife,
+		LosesOnGem
+	}
+
 	private static EventManagerSingleton _instance = null;
 
 	// Get the instance of the EventManagerSingleton
@@ -24,4 +30,19 @@ public class EventManagerSingleton
 
 	// Private constructor to prevent initialization from outside the class
 	private EventManagerSingleton () {}
+
+	public delegate void LosesOneLifeEvent ();
+	public event LosesOneLifeEvent LosesOneLife;
+
+	public delegate void LosesOneGemEvent ();
+	public event LosesOneGemEvent LosesOneGem;
+
+	public void Raise (Type type)
+	{
+		if (LosesOneLife != null)
+			LosesOneLife();
+
+		if (LosesOneGem != null)
+			LosesOneGem();
+	}
 }
